@@ -458,7 +458,7 @@ class LiveTrackingController extends GetxController {
     final Canvas canvas = Canvas(pictureRecorder);
     final Paint paint = Paint()..color = backgroundColor;
     final Paint shadowPaint = Paint()
-      ..color = Colors.black.withOpacity(0.3)
+      ..color = Colors.black.withValues(alpha: 0.3)
       ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4);
 
     // Draw shadow
@@ -554,7 +554,7 @@ class LiveTrackingController extends GetxController {
       polylineId: shadowId,
       points: polylineCoordinates,
       width: 10,
-      color: Colors.black.withOpacity(0.2),
+      color: Colors.black.withValues(alpha: 0.2),
     );
     polyLines[shadowId] = shadowPolyline;
 

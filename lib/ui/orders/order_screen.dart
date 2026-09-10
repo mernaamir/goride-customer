@@ -172,8 +172,9 @@ class OrderScreen extends StatelessWidget {
                                                                 BoxShadow(
                                                                   color: Colors
                                                                       .black
-                                                                      .withOpacity(
-                                                                          0.10),
+                                                                      .withValues(
+                                                                          alpha:
+                                                                              0.10),
                                                                   blurRadius: 5,
                                                                   offset: const Offset(
                                                                       0,
@@ -217,8 +218,8 @@ class OrderScreen extends StatelessWidget {
                                                                   ),
                                                                   Text(
                                                                     Constant.amountShow(
-                                                                        amount: orderModel
-                                                                            .customerPayableFareText),
+                                                                        amount:
+                                                                            orderModel.customerPayableFareText),
                                                                     style: GoogleFonts.poppins(
                                                                         fontWeight:
                                                                             FontWeight.bold),
@@ -912,8 +913,9 @@ class OrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset: const Offset(
                                                                 0,
@@ -1096,8 +1098,9 @@ class OrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset: const Offset(
                                                                 0,

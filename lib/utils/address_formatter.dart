@@ -106,10 +106,12 @@ class AddressFormatter {
     final city = _firstMatch(components, _cityTypes);
 
     final parts = <String>[];
-    if (neighborhood != null && neighborhood.isNotEmpty)
+    if (neighborhood != null && neighborhood.isNotEmpty) {
       parts.add(neighborhood);
-    if (city != null && city.isNotEmpty && city != neighborhood)
+    }
+    if (city != null && city.isNotEmpty && city != neighborhood) {
       parts.add(city);
+    }
 
     if (parts.isNotEmpty) return parts.join('، ');
     final filtered = clean(fallback);

@@ -47,10 +47,11 @@ class LoginScreen extends StatelessWidget {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 12, vertical: 8),
                               decoration: BoxDecoration(
-                                color: AppColors.primary.withOpacity(0.1),
+                                color: AppColors.primary.withValues(alpha: 0.1),
                                 borderRadius: BorderRadius.circular(30),
                                 border: Border.all(
-                                    color: AppColors.primary.withOpacity(0.3)),
+                                    color: AppColors.primary
+                                        .withValues(alpha: 0.3)),
                               ),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
@@ -407,12 +408,13 @@ class LoginScreen extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
         decoration: BoxDecoration(
           color: isSelected
-              ? AppColors.primary.withOpacity(0.1)
+              ? AppColors.primary.withValues(alpha: 0.1)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color:
-                isSelected ? AppColors.primary : Colors.grey.withOpacity(0.2),
+            color: isSelected
+                ? AppColors.primary
+                : Colors.grey.withValues(alpha: 0.2),
             width: isSelected ? 1.5 : 1,
           ),
         ),

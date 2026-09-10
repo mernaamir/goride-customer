@@ -1,4 +1,3 @@
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:customer/constant/constant.dart';
@@ -160,7 +159,7 @@ class HomeScreen extends StatelessWidget {
                                                       ),
                                                     ),
                                                     color: Colors.black
-                                                        .withOpacity(0.5),
+                                                        .withValues(alpha: 0.5),
                                                     placeholder: (context,
                                                             url) =>
                                                         const Center(
@@ -252,9 +251,10 @@ class HomeScreen extends StatelessWidget {
                                                                   hintText:
                                                                       'Your current location'
                                                                           .tr,
-                                                                  controller: controller
-                                                                      .sourceLocationController
-                                                                      .value,
+                                                                  controller:
+                                                                      controller
+                                                                          .sourceLocationController
+                                                                          .value,
                                                                   enable:
                                                                       false),
                                                         )),
@@ -334,12 +334,12 @@ class HomeScreen extends StatelessWidget {
                                             horizontal: 14, vertical: 12),
                                         decoration: BoxDecoration(
                                           color: AppColors.primary
-                                              .withOpacity(0.08),
+                                              .withValues(alpha: 0.08),
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           border: Border.all(
                                             color: AppColors.primary
-                                                .withOpacity(0.3),
+                                                .withValues(alpha: 0.3),
                                           ),
                                         ),
                                         child: Row(
@@ -372,7 +372,8 @@ class HomeScreen extends StatelessWidget {
                                                       fontWeight:
                                                           FontWeight.w400,
                                                       color: AppColors.primary
-                                                          .withOpacity(0.7),
+                                                          .withValues(
+                                                              alpha: 0.7),
                                                     ),
                                                   ),
                                                 ],
@@ -611,7 +612,8 @@ class HomeScreen extends StatelessWidget {
                                                                 .isNotEmpty
                                                             ? controller
                                                                 .finalPayable
-                                                                .toStringAsFixed(2)
+                                                                .toStringAsFixed(
+                                                                    2)
                                                             : "Offer rate".tr,
                                                         style:
                                                             GoogleFonts.poppins(
@@ -668,11 +670,8 @@ class HomeScreen extends StatelessWidget {
                                         bool isPaymentNotCompleted =
                                             await FireStoreUtils
                                                 .paymentStatusCheck();
-                                        if (controller
-                                            .sourceLocationController
-                                            .value
-                                            .text
-                                            .isEmpty) {
+                                        if (controller.sourceLocationController
+                                            .value.text.isEmpty) {
                                           controller.isBookingInProgress.value =
                                               false;
                                           ShowToastDialog.showToast(
@@ -1097,8 +1096,8 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Expanded(
                       child: Text("Discount Applied".tr,
-                          style: labelStyle()
-                              .copyWith(color: Colors.green[700]))),
+                          style:
+                              labelStyle().copyWith(color: Colors.green[700]))),
                   Text(
                     "- ${Constant.amountShow(amount: discount.toStringAsFixed(2))}",
                     style: valueStyle(color: Colors.green[700]),

@@ -66,8 +66,7 @@ class CompleteOrderScreen extends StatelessWidget {
                   // safe to mount unconditionally as long as we have an id.
                   if ((controller.orderModel.value.id ?? '').isNotEmpty &&
                       controller.orderModel.value.destinationless == true)
-                    LiveFareBanner(
-                        orderId: controller.orderModel.value.id!),
+                    LiveFareBanner(orderId: controller.orderModel.value.id!),
                   Container(
                     height: Responsive.width(10, context),
                     width: Responsive.width(100, context),
@@ -121,7 +120,8 @@ class CompleteOrderScreen extends StatelessWidget {
                                                   : [
                                                       BoxShadow(
                                                         color: Colors.black
-                                                            .withOpacity(0.10),
+                                                            .withValues(
+                                                                alpha: 0.10),
                                                         blurRadius: 5,
                                                         offset: const Offset(0,
                                                             4), // changes position of shadow
@@ -278,7 +278,7 @@ class CompleteOrderScreen extends StatelessWidget {
                                                                       BoxShadow(
                                                                         color: Colors
                                                                             .black
-                                                                            .withOpacity(0.10),
+                                                                            .withValues(alpha: 0.10),
                                                                         blurRadius:
                                                                             5,
                                                                         offset: const Offset(
@@ -462,7 +462,8 @@ class CompleteOrderScreen extends StatelessWidget {
                                                   : [
                                                       BoxShadow(
                                                         color: Colors.black
-                                                            .withOpacity(0.10),
+                                                            .withValues(
+                                                                alpha: 0.10),
                                                         blurRadius: 5,
                                                         offset: const Offset(0,
                                                             4), // changes position of shadow
@@ -609,7 +610,8 @@ class CompleteOrderScreen extends StatelessWidget {
                                                   : [
                                                       BoxShadow(
                                                         color: Colors.black
-                                                            .withOpacity(0.10),
+                                                            .withValues(
+                                                                alpha: 0.10),
                                                         blurRadius: 5,
                                                         offset: const Offset(0,
                                                             4), // changes position of shadow
@@ -675,8 +677,10 @@ class CompleteOrderScreen extends StatelessWidget {
                                                   const Divider(
                                                     thickness: 1,
                                                   ),
-                                                  if (controller.orderModel
-                                                          .value.isAdminCreated !=
+                                                  if (controller
+                                                          .orderModel
+                                                          .value
+                                                          .isAdminCreated !=
                                                       true) ...[
                                                     Row(
                                                       children: [
@@ -758,9 +762,10 @@ class CompleteOrderScreen extends StatelessWidget {
                                                             child: Text(
                                                               "Holding Charge (${controller.orderModel.value.rideHoldTimeMinutes} Minutes)"
                                                                   .tr,
-                                                              style: GoogleFonts.poppins(
-                                                                  color: AppColors
-                                                                      .subTitleColor),
+                                                              style: GoogleFonts
+                                                                  .poppins(
+                                                                      color: AppColors
+                                                                          .subTitleColor),
                                                             ),
                                                           ),
                                                           Text(
@@ -784,7 +789,8 @@ class CompleteOrderScreen extends StatelessWidget {
                                                   controller.orderModel.value
                                                                   .taxList ==
                                                               null ||
-                                                          controller.orderModel
+                                                          controller
+                                                                  .orderModel
                                                                   .value
                                                                   .isAdminCreated ==
                                                               true
@@ -836,8 +842,10 @@ class CompleteOrderScreen extends StatelessWidget {
                                                             );
                                                           },
                                                         ),
-                                                  if (controller.orderModel
-                                                          .value.isAdminCreated !=
+                                                  if (controller
+                                                          .orderModel
+                                                          .value
+                                                          .isAdminCreated !=
                                                       true) ...[
                                                     Row(
                                                       children: [

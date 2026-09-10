@@ -190,8 +190,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                                 BoxShadow(
                                                                   color: Colors
                                                                       .black
-                                                                      .withOpacity(
-                                                                          0.10),
+                                                                      .withValues(
+                                                                          alpha:
+                                                                              0.10),
                                                                   blurRadius: 5,
                                                                   offset: const Offset(
                                                                       0,
@@ -274,8 +275,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                               decoration: BoxDecoration(
                                                                   color: Colors
                                                                       .grey
-                                                                      .withOpacity(
-                                                                          0.30),
+                                                                      .withValues(
+                                                                          alpha:
+                                                                              0.30),
                                                                   borderRadius:
                                                                       const BorderRadius
                                                                           .all(
@@ -300,8 +302,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                               decoration: BoxDecoration(
                                                                   color: AppColors
                                                                       .primary
-                                                                      .withOpacity(
-                                                                          0.30),
+                                                                      .withValues(
+                                                                          alpha:
+                                                                              0.30),
                                                                   borderRadius:
                                                                       const BorderRadius
                                                                           .all(
@@ -703,8 +706,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset: const Offset(
                                                                 0,
@@ -757,8 +761,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                                 decoration: BoxDecoration(
                                                                     color: Colors
                                                                         .grey
-                                                                        .withOpacity(
-                                                                            0.30),
+                                                                        .withValues(
+                                                                            alpha:
+                                                                                0.30),
                                                                     borderRadius:
                                                                         const BorderRadius
                                                                             .all(
@@ -782,8 +787,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                                 decoration: BoxDecoration(
                                                                     color: AppColors
                                                                         .primary
-                                                                        .withOpacity(
-                                                                            0.30),
+                                                                        .withValues(
+                                                                            alpha:
+                                                                                0.30),
                                                                     borderRadius:
                                                                         const BorderRadius
                                                                             .all(
@@ -960,8 +966,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset: const Offset(
                                                                 0,
@@ -1021,8 +1028,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                             decoration: BoxDecoration(
                                                                 color: Colors
                                                                     .grey
-                                                                    .withOpacity(
-                                                                        0.30),
+                                                                    .withValues(
+                                                                        alpha:
+                                                                            0.30),
                                                                 borderRadius:
                                                                     const BorderRadius
                                                                         .all(
@@ -1048,8 +1056,9 @@ class InterCityOrderScreen extends StatelessWidget {
                                                             decoration: BoxDecoration(
                                                                 color: AppColors
                                                                     .primary
-                                                                    .withOpacity(
-                                                                        0.30),
+                                                                    .withValues(
+                                                                        alpha:
+                                                                            0.30),
                                                                 borderRadius:
                                                                     const BorderRadius
                                                                         .all(

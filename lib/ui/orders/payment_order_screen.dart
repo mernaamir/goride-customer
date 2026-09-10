@@ -168,7 +168,7 @@ class PaymentOrderScreen extends StatelessWidget {
                                                                       : [
                                                                           BoxShadow(
                                                                             color:
-                                                                                Colors.black.withOpacity(0.10),
+                                                                                Colors.black.withValues(alpha: 0.10),
                                                                             blurRadius:
                                                                                 5,
                                                                             offset:
@@ -308,8 +308,9 @@ class PaymentOrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset:
                                                                 const Offset(
@@ -400,8 +401,9 @@ class PaymentOrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset:
                                                                 const Offset(
@@ -527,8 +529,9 @@ class PaymentOrderScreen extends StatelessWidget {
                                                       : [
                                                           BoxShadow(
                                                             color: Colors.black
-                                                                .withOpacity(
-                                                                    0.10),
+                                                                .withValues(
+                                                                    alpha:
+                                                                        0.10),
                                                             blurRadius: 5,
                                                             offset:
                                                                 const Offset(
@@ -785,13 +788,11 @@ class PaymentOrderScreen extends StatelessWidget {
                                                   true)
                                                 ButtonThem.buildButton(
                                                   context,
-                                                  title:
-                                                      "تأكيد الدفع نقداً".tr,
+                                                  title: "تأكيد الدفع نقداً".tr,
                                                   onPress: () async {
                                                     controller
-                                                            .selectedPaymentMethod
-                                                            .value =
-                                                        "Cash";
+                                                        .selectedPaymentMethod
+                                                        .value = "Cash";
                                                     controller
                                                         .completeCashOrder();
                                                   },
@@ -804,15 +805,16 @@ class PaymentOrderScreen extends StatelessWidget {
                                                       horizontal: 16),
                                                   decoration: BoxDecoration(
                                                     color: Colors.green
-                                                        .withOpacity(0.1),
+                                                        .withValues(alpha: 0.1),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             8),
                                                   ),
                                                   child: Row(
                                                     children: [
-                                                      const Icon(Icons
-                                                          .check_circle_outline,
+                                                      const Icon(
+                                                          Icons
+                                                              .check_circle_outline,
                                                           color: Colors.green),
                                                       const SizedBox(width: 8),
                                                       Expanded(

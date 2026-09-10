@@ -68,7 +68,7 @@ class LiveFareBanner extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: AppColors.primary.withOpacity(0.25),
+                color: AppColors.primary.withValues(alpha: 0.25),
                 blurRadius: 8,
                 offset: const Offset(0, 3),
               ),
@@ -103,7 +103,7 @@ class LiveFareBanner extends StatelessWidget {
                   Text(
                     "${distance.toStringAsFixed(2)} km · ${duration.toStringAsFixed(0)} min",
                     style: GoogleFonts.poppins(
-                      color: Colors.white.withOpacity(0.92),
+                      color: Colors.white.withValues(alpha: 0.92),
                       fontWeight: FontWeight.w500,
                       fontSize: compact ? 10 : 11,
                     ),

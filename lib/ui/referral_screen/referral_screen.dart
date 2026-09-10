@@ -177,7 +177,8 @@ class ReferralScreen extends StatelessWidget {
                                                 : [
                                                     BoxShadow(
                                                       color: Colors.black
-                                                          .withOpacity(0.10),
+                                                          .withValues(
+                                                              alpha: 0.10),
                                                       blurRadius: 5,
                                                       offset: const Offset(0,
                                                           4), // changes position of shadow
@@ -217,7 +218,8 @@ class ReferralScreen extends StatelessWidget {
                                                 : [
                                                     BoxShadow(
                                                       color: Colors.black
-                                                          .withOpacity(0.10),
+                                                          .withValues(
+                                                              alpha: 0.10),
                                                       blurRadius: 5,
                                                       offset: const Offset(0,
                                                           4), // changes position of shadow
@@ -257,7 +259,8 @@ class ReferralScreen extends StatelessWidget {
                                                 : [
                                                     BoxShadow(
                                                       color: Colors.black
-                                                          .withOpacity(0.10),
+                                                          .withValues(
+                                                              alpha: 0.10),
                                                       blurRadius: 5,
                                                       offset: const Offset(0,
                                                           4), // changes position of shadow

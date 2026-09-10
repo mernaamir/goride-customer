@@ -293,18 +293,22 @@ class GoogleMapSearchPlacesApiState extends State<GoogleMapSearchPlacesApi> {
       return Icons.shopping_basket;
     }
     if (t.any((x) => x == 'store' || x == 'shopping_mall')) return Icons.store;
-    if (t.any((x) => x == 'hospital' || x == 'pharmacy'))
+    if (t.any((x) => x == 'hospital' || x == 'pharmacy')) {
       return Icons.local_hospital;
+    }
     if (t.any((x) => x == 'school' || x == 'university')) return Icons.school;
     if (t.any((x) => x == 'bank' || x == 'atm')) return Icons.account_balance;
     if (t.contains('gas_station')) return Icons.local_gas_station;
     if (t.any((x) => x == 'lodging' || x == 'hotel')) return Icons.hotel;
-    if (t.any((x) => x == 'mosque' || x == 'place_of_worship'))
+    if (t.any((x) => x == 'mosque' || x == 'place_of_worship')) {
       return Icons.account_balance;
-    if (t.any((x) => x == 'locality' || x == 'administrative_area_level_1'))
+    }
+    if (t.any((x) => x == 'locality' || x == 'administrative_area_level_1')) {
       return Icons.location_city;
-    if (t.any((x) => x == 'route' || x == 'street_address'))
+    }
+    if (t.any((x) => x == 'route' || x == 'street_address')) {
       return Icons.alt_route;
+    }
     return Icons.location_on;
   }
 

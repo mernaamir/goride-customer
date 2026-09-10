@@ -400,7 +400,8 @@ class _BankilyPaymentScreenState extends State<BankilyPaymentScreen> {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: const Color(BankilyConfig.brandColor).withOpacity(0.1),
+                color: const Color(BankilyConfig.brandColor)
+                    .withValues(alpha: 0.1),
                 shape: BoxShape.circle,
               ),
               child: const Icon(
